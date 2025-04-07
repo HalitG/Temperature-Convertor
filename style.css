@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+
+body {
+  margin: 0;
+  background-image: url(img/0e1dc2a0-33c5-11ef-a508-e1cdd362243c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Martian mono;
+  color: #222;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 85%;
+  max-width: 550px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 36px;
+}
+
+.temp-container {
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.input {
+  width: 320px;
+  font-family: Martian mono;
+  font-size: 11px;
+  padding: 5px;
+  float: right;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: 0.5px solid #333;
+  color: darkcyan;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: darkred;
+}
+
+@media (max-width: 768px) {
+  .temp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .input {
+    margin: 5px;
+  }
+}
